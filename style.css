@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+position: fixed;
+background-color: rgba(255, 255, 255, 0.5);
+width: 100%;
+color: black;
+padding: 1rem;
+}
+
+.wallpaper {
+    background: url(https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)
+    center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taught{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  section {
+    padding: 1rem;
+  }
+  
+  section.bg {
+    
+    background-color:#e1e1e1;
+  }
+  
+
+button{
+
+    appearance: normal;
+}
