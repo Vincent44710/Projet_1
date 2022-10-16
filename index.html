@@ -7,7 +7,7 @@
     <link rel="stylesheet" media="screen" type="text/css" href="style.css"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-    </style>
+        </style>
     <title>Pizzeria-projet-1</title>
 </head>
 
@@ -16,12 +16,16 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="navbar-link">
+                <img class="logo" src="Au-fil-du-temps.svg" alt="logo resto"> 
                 <li><a href="Acceuil">Acceuil</a></li>
                 <li><a href="Présentation">Présentation</a></li>
                 <li><a href="Nos-pizzas">Nos pizzas</a></li>
                 <li><a href="Contact">Contactez Nous</a></li>
             </ul>
+            <div class="burger">
+                <span></span>
+            </div> 
         </nav>    
     </header>
 
@@ -34,18 +38,18 @@
         </section>
 
     <section>
-        <h1>Acceuil</h1>
+        <h2>Acceuil</h2>
             <p>La pizza est née au XVIème siècle dans la ville de Naples en Italie. A cette époque on essayait d'améliorer le goût – un peu fade – des crêpes de pain, avec l'aide de gros sel et de gras de porc.
                 Vraisemblablement c'était à l'origine le repas du pauvre: on garnissait de la pâte à pain, avant ou après sa cuisson, avec ce qu'on avait sous la main.
                 La pizza actuelle, telle que nous l'aimons, est née à Naples. La légende veut que la reine Marguerite ait particulièrement apprécié la pizza garnie de tomates, de mozzarella et de basilic (rouge-blanc-vert, les couleurs du drapeau italien).
-                
+            </p>  
         <img src="ancetre.jpg" alt="Grand papy">
         <img src="reine.jpg" alt="reine margherite">
         <img src="papy_1962.jpg" alt="papy">
     </section>
 
     <section>
-        <h1>Présentation</h1>
+        <h2>Présentation</h2>
             <p>Notre famille, native de Naple se partage cette recette ancestrale de génération en génération depuis 2 millenaires. 
                 Envis de partager une degustation unique, la Pizzeria "au fils du temps" vous fera traversez les époques avec se même goût ancestrale qui à ravie notre reine Marguerite. <br/>
                 <br/>
@@ -57,13 +61,13 @@
     </section>
 
     <section>
-        <h1>Nos pizzas</h1>
+        <h2>Nos pizzas</h2>
         <Button class="creme">Pizza base crème</Button>
         <button class="tomate">Pizza base tomate</button>
     </section>
 
     <section>
-        <h1>Contactez nous</h1>
+        <h2>Contactez nous</h2>
 
 
 
@@ -85,6 +89,6 @@
 
     </footer>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

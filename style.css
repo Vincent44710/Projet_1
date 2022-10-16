@@ -1,20 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 header{
 position: fixed;
 background-color: rgba(255, 255, 255, 0.5);
 width: 100%;
-color: black;
-padding: 1rem;
+padding:15px;
 }
 
 .wallpaper {
-    background: url(https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)
-    center center no-repeat;
+    background-image:url(presentation.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,22 +21,107 @@ padding: 1rem;
 
 .taught{
     color: white;
-    font-size: 2rem;
+    font-size: 8px;
     padding: 1rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  }
-  
+    font-family: 'Great Vibes', cursive; 
+}
+
+h1{
+  align-items: center;
+  font-size: 5em;
+}
+h2{
+  text-align: center;
+  margin-bottom: 15px;
+}
+p{
+  margin-bottom: 20px;
+}
   section {
     padding: 1rem;
   }
   
-  section.bg {
-    
-    background-color:#e1e1e1;
-  }
-  
-
 button{
+    padding: 0.85em 2.6em;
+    margin: 15px;
+}
+.navbar-link{
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  width:0;
+  height:calc(100vh - 65px);  
+  position:absolute;
+  top:65px;
+  right:0;     
+  background:var(--navbar-bg-color);     
+  transform: translateX(110%);
+  transition: all .5s ease-in-out;
+}
 
-    appearance: normal;
+ /* ul{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+     justify-content: space-around;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em; 
+   
+} 
+
+ li::before{
+  content: "🍕";
+  padding-right: 8px;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+}  */ 
+.burger{
+width: 42px;
+height: 24px;
+cursor: pointer;
+position: relative;
+}
+
+.burger span{
+width: 100%;
+height: 4px;
+background-color: black;
+display: block;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+transition: background-color 0.5s ease-in-out;
+}
+
+.burger span::before, .burger span::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before{
+  transform: translateY(-10px);
+
+}
+.burger span::after{
+  transform: translateY(10px);
+
+}
+
+.burger.active span{
+  background-color: transparent;
+  /* quand nous rendons la span active, celle ci devient transparente. */
+
+}
+.burger.active span::before{
+  transform: translateY(0px) rotateZ(45deg);
+}
+.burger.active span::after{
+  transform: translateY(0px) rotateZ(-45deg);
 }
