@@ -9,7 +9,9 @@ header{
   width: 100%;
   padding:15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
 }
 
 nav {
@@ -131,10 +133,20 @@ transition: background-color 0.5s ease-in-out;
 
 /* logo */
 #logo{
-  height: 100px;
+  height: auto;
   width: 100px;
-  
 }
+
+.pizza{
+  background-color: #F0ECB2;
+}
+
+.contact{
+  background-image:url(napple.jpg);
+}
+
+
+
 
 
 

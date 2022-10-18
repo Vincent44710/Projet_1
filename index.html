@@ -18,10 +18,10 @@
         <img id="logo" src="Au-fil-du-temps.svg" alt="logo resto">
         <nav>
             <ul class="navbar-link">
-                <li><a href="Acceuil">Acceuil</a></li>
-                <li><a href="Présentation">Présentation</a></li>
-                <li><a href="Nos-pizzas">Nos pizzas</a></li>
-                <li><a href="Contact">Contactez Nous</a></li>
+                <li><a href="#ancre1">Acceuil</a></li>
+                <li><a href="#ancre2">Présentation</a></li>
+                <li><a href="#ancre3">Nos pizzas</a></li>
+                <li><a href="#ancre4">Contactez Nous</a></li>
             </ul>
         </nav>
         <div class="burger">
@@ -37,8 +37,8 @@
                 <h1>06-19-84-58-34</h1>
             </div>
         </section>
-        <section>
-            <h2>Acceuil</h2>
+        <section class="acceuil">
+            <h2 id="ancre1">Acceuil</h2>
                 <p>La pizza est née au XVIème siècle dans la ville de Naples en Italie. A cette époque on essayait d'améliorer le goût – un peu fade – des crêpes de pain, avec l'aide de gros sel et de gras de porc.
                     Vraisemblablement c'était à l'origine le repas du pauvre: on garnissait de la pâte à pain, avant ou après sa cuisson, avec ce qu'on avait sous la main.
                     La pizza actuelle, telle que nous l'aimons, est née à Naples. La légende veut que la reine Marguerite ait particulièrement apprécié la pizza garnie de tomates, de mozzarella et de basilic (rouge-blanc-vert, les couleurs du drapeau italien).
@@ -48,8 +48,8 @@
             <img src="papy_1962.jpg" alt="papy">
         </section>
 
-        <section>
-            <h2>Présentation</h2>
+        <section class="presentation">
+            <h2 id="ancre2">Présentation</h2>
                 <p>Notre famille, native de Naple se partage cette recette ancestrale de génération en génération depuis 2 millenaires. 
                     Envis de partager une degustation unique, la Pizzeria "au fils du temps" vous fera traversez les époques avec se même goût ancestrale qui à ravie notre reine Marguerite. <br/>
                     <br/>
@@ -60,49 +60,158 @@
                 <img src="terrasse2.jpg" alt="terrasse exterrieur2">
         </section>
 
-        <section>
-            <h2>Nos pizzas</h2>
+        <section class="pizza">
+            <h2 id="ancre3">Nos pizzas</h2>
             <Button class="creme">Pizza base crème</Button>
                     
             <div class="pizza crème">
+                <a href="milanaise-grande.jpg"><img src="milanaise-80x80.jpg" alt="pizza milanaise" title="cliquez pour agrandir"/></a>
                 <h3>Milanaise</h3>
                     <p>Sauce 3 fromages, émincé de poulet, chorizo, mozzarella.</p>
-                    <p>10€</p>
+                    <p class="prix">........................................................................................10€</p>
 
-                <h3>Nantaise</h3>
+                    <a href="nantaise_grande.jpg"><img src="nantaise-80x80.jpg" alt="pizza nantaise" title="cliquez pour agrandir"/></a>
+                <h3>Nantaise</h3> 
                     <p>Crème, pommes de terre, jambon cuit au torchon, lardons, mozzarella, curé nantais.</p>
+                    <p class="prix">........................................................................................12.5€</p>
 
+                    <a href="normande_grande.jpg"><img src="normande_80x80.jpg" alt="pizza normande" title="cliquez pour agrandir"/></a>
                 <h3>Normande</h3> 
                     <p>Crème de camembert au lait cru, jambon cuit au torchon, camembert, persillade, mozzarella.</p> 
-                    
+                    <p class="prix">........................................................................................11.50€</p>
+
+                    <a href="norvegienne_grande.jpg"><img src="norvegienne-80x80.jpg" alt="pizza norvegienne" title="cliquez pour agrandir"/></a>
                 <h3>Norvegienne</h3>
                     <p>Crème, saumon fumé, citron, ciboulette, huile d’olive au citron.</p>
+                    <p class="prix">........................................................................................9.30€</p>
 
+                    <a href="tartiflette_grande.jpg"><img src="tartiflette-80x80.jpg" alt="pizza tartiflette" title="cliquez pour agrandir"/></a>
                 <h3>Tartiflette</h3>
                     <p>Crème de reblochon fermier, pommes de terre, lardons, oignons, reblochon, mozzarella.</p>
+                    <p class="prix">........................................................................................9.80€</p>
+
             </div>
             <button class="tomate">Pizza base tomate</button>
 
             <div class="pizza tomate"></div>
+                <a href="kilina-grande.jpg"><img src="kilina-80x80.jpg" alt="pizza kilina" title="cliquez pour agrandir"/></a>
                 <h3>Kilina</h3>
                 <p>Tomate bio, tomates confites, jambon cru, roquette, crème balsamique, tomates cerise, copeaux de parmesan.</p>
+                <p class="prix">........................................................................................13€</p>
 
+                <a href="gorgonzola-grande.jpg"><img src="gorgonzola-80x80.jpg" alt="pizza gorgonzola" title="cliquez pour agrandir"/></a>
                 <h3>Gorgonzola</h3>
                 <p>Tomate bio, mozzarella, poitrine fumée, sauce 3 fromages, gorgonzola</p>
+                <p class="prix">........................................................................................12.40€</p>
 
+                <a href="bolognaise-grande.jpg"><img src="bolognaise-80x80.jpg" alt="pizza bolognaise" title="cliquez pour agrandir"/></a>
                 <h3>Bolognaise</h3>
                 <p>Tomate bio, mozzarella, viande de bœuf cuisinée maison, oeuf, crème.</p>
+                <p class="prix">........................................................................................14.50€</p>
 
+                <a href="calzone-grande.jpg"><img src="calzone-80x80.jpg" alt="pizza calzone" title="cliquez pour agrandir"/></a>
                 <h3>Calzone (Chausson)</h3>
                 <p>Tomate bio, jambon cuit au torchon, champignons, œuf, mozzarella.</p>
+                <p class="prix">........................................................................................10.30€</p>
 
+                <a href="barbecue-grande.jpg"><img src="barbecue-80x80.jpg" alt="pizza barbecue" title="cliquez pour agrandir"/></a>
                 <h3>Barbecue</h3>
                 <p>Tomate bio, mozzarella, poivrons, oignons rouges, viande de bœuf cuisinée maison, œuf, sauce barbecue.</p>
+                <p class="prix">........................................................................................11.20€</p>
+
         </section>
 
-        <section>
-            <h2>Contactez nous</h2>
+        <section class="contact">
+            <h2 id="ancre4">Contactez nous</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.2655997936104!2d-1.549740084596134!3d47.21138517916038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ef2139832f6b%3A0xe5aaf780b1ea1c91!2sWild%20Code%20School%20-%20Formation%20D%C3%A9veloppeur%20Web%20et%20Data%20Analyst!5e0!3m2!1sfr!2sfr!4v1666103790131!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+            <h1 id="title">Nous souhaitons nous améliorer</h1>
+	</header>
+	<body>
+	<div id="form-outer">
+		<p id="description">Dis moi comment je peux m'améliorer.</p>
+		<form id="survey-form">
+			<div class="rowTab"> 
+				<div class="labels"><!-- demande de nom -->
+					<label id="name-label" for="name">* Ton nom :</label>
+				</div>
+				<div class="rightTab">
+					<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Nom et prénom" required>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels"><!-- demande de Mail-->
+					<label id="email-label" for="email">* Ton Email :</label>
+				</div>
+				<div class="rightTab">
+					<input type="email" name="email" id="email" class="input-field" required placeholder="Ton Email">
+				</div>
+			
+			<div class="rowTab">
+				<div class="labels"><!-- choix multiple sur le job-->
+					<label for="currentPos">Qu'est-ce qui te correspond le mieux à l'instant présent :</label>
+				</div>
+			
+			</div>
+
+			<div class="rowTab">
+				<div class="labels"><!--choix multiple sur la recommendation-->
+					<label for="userRating">Est-ce que tu me recommandes?</label>
+				</div>
+				<div class="rightTab">
+					<ul style="list-style: none;">
+						<li class="radio">
+							<label>Oui<input name="radio-buttons" value="1" type="radio" class="userRatings"></label>
+						</li>
+						<li class="radio">
+							<label>Peut-être <input name="radio-buttons" value="2" type="radio" class="userRatings"></label>
+						</li>
+						<li class="radio">
+							<label>Non<input name="radio-buttons" value="3" type="radio" class="userRatings"></label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		    <div class="rowTab">
+		      	<div class="labels"><!--choix morale-->
+		        	<label for="most-like">pourquoi as tu choisis mes services ? </label>
+		      	</div>
+		      	<div class="rightTab">
+		        	<select id="most-like" name="mostLike" class="dropdown">
+		      			<option disabled selected value>Choisis une réponse</option>
+		      			<option value="challenges">Pour ce que je propose</option>
+		      			<option value="community">Par recommendation</option>
+		    		</select>
+		      	</div>
+		    </div>
+		    <div class="rowTab">
+		    	<div class="labels">
+		    		<label for="preferences">Qu'est-ce que je dois ameliorer :<br>(choix illimité): </label>
+		    	</div>
+		    	<div class="rightTab">
+		    		<ul id="preferences">
+		    			<li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Les produits de qualité supérieur</label>
+		    			</li>
+		    			<li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">La garniture rapport quantité/prix</label>
+		    			</li>		    			
+		    			<li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">L'ambiance du restaurant</label>
+		    			</li>		    			
+		    			<li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Le personnel</label>
+		    			</li>		    			
+		    		</ul>
+		    	</div>
+		    </div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="comments">Un commentaire à ajouter?</label>
+				</div>
+				<div class="rigtTab">
+					<textarea id="comments" class="input-field" resize:vertical; placeholder="Chaque commentaire nous fait avancer, alors n'hésites pas..."></textarea>
+				</div>
+			</div>
+			<button id="submit" type="submit">Envoi !</button>
+		</form>
+	</div>
         </section>
     </main>
 
