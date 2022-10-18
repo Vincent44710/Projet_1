@@ -4,10 +4,30 @@
     list-style-type: none;
 }
 header{
-position: fixed;
-background-color: rgba(255, 255, 255, 0.5);
-width: 100%;
-padding:15px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding:15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 130px;
+  width: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s linear;
+}
+
+nav.show {
+  padding: 30px;
+  width: auto;
+}
+
+nav ul li {
+  padding: 10px;
 }
 
 .wallpaper {
@@ -36,48 +56,28 @@ h2{
 }
 p{
   margin-bottom: 20px;
+  color: black;
 }
   section {
     padding: 1rem;
   }
-  
+
+
+
+
+  /* Button pizza selection */
 button{
     padding: 0.85em 2.6em;
     margin: 15px;
-}
-.navbar-link{
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  width:0;
-  height:calc(100vh - 65px);  
-  position:absolute;
-  top:65px;
-  right:0;     
-  background:var(--navbar-bg-color);     
-  transform: translateX(110%);
-  transition: all .5s ease-in-out;
+    flex-wrap: wrap;
+
 }
 
- /* ul{
-    text-decoration: none;
-    align-items: center;
-    display: flex;
-     justify-content: space-around;
-    font-family: 'Great Vibes', cursive;
-    font-size: 2em; 
-   
-} 
 
- li::before{
-  content: "🍕";
-  padding-right: 8px;
-}
 
-a:link{
-  text-decoration: none;
-  color: white;
-}  */ 
+
+
+
 .burger{
 width: 42px;
 height: 24px;
@@ -124,4 +124,58 @@ transition: background-color 0.5s ease-in-out;
 }
 .burger.active span::after{
   transform: translateY(0px) rotateZ(-45deg);
+}
+
+/* logo */
+.logo{
+  height: 100px;
+  width: 100px;
+}
+
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 648px) {
+  
+.burger{
+  display: none;
+}
+
+ul{
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em; 
+}
+
+nav {
+  position: initial;
+  right: initial;
+  top: initial;
+  width: initial;
+  background-color: initial;
+}
+
+nav.show {
+  width: initial;
+  padding: initial;
+}
+
+nav ul li {
+  padding: initial;
+}
+
+li::before{
+  content: "🍕";
+  padding-right: 8px;
+}
+
+a:link{
+  text-decoration: none;
+  color: white;
+} 
+
 }
