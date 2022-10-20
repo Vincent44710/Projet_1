@@ -19,7 +19,7 @@ nav {
   right: 0;
   top: 130px;
   width: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(41, 39, 39, 0.5);
   transition: 0.5s linear;
 }
 
@@ -31,12 +31,17 @@ nav.show {
   border-radius: 1em;
 }
 
+li{
+  color: #CCC;
+  
+}
+
 nav ul li {
   padding: 10px;
 }
 
 .wallpaper {
-    background-image:url(presentation.jpg);
+    background-image:url(photo/presentation.jpg);
     background-size: cover;
     height: 15rem;
     display: flex;
@@ -243,7 +248,7 @@ transition: background-color 0.5s ease-in-out;
 }
 
 .contact{
-  background-image:url(napple.jpg);
+  background-image:url(photo/napple.jpg);
 }
 
 
@@ -253,11 +258,25 @@ transition: background-color 0.5s ease-in-out;
 
 /* DESKTOP */
 
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 480px) {
   
+  .wallpaper {
+    background-image:none;
+    background-size: cover;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .burger{
   display: none;
 }
+
+
+
 
 ul{
   text-decoration: none;
@@ -265,7 +284,7 @@ ul{
   display: flex;
   justify-content: space-around;
   font-family: 'Great Vibes', cursive;
-  font-size: 2em; 
+  font-size: 1rem; 
 }
 
 nav {
@@ -295,5 +314,6 @@ a:link{
   text-decoration: none;
   color: white;
 } 
+
 
 }
