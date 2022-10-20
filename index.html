@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" type="text/css" href="style.css"/>
-    <style>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Inter:wght@500&family=Patrick+Hand&family=Playball&display=swap');
+        </style>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Patrick+Hand&family=Playball&display=swap');
+        </style>
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
         </style>
     <title>Pizzeria-projet-1</title>
 </head>
-
-
-
 <body>
     <header>
         <img id="logo" src="Au-fil-du-temps.svg" alt="logo resto">
@@ -43,9 +46,25 @@
                     Vraisemblablement c'était à l'origine le repas du pauvre: on garnissait de la pâte à pain, avant ou après sa cuisson, avec ce qu'on avait sous la main.
                     La pizza actuelle, telle que nous l'aimons, est née à Naples. La légende veut que la reine Marguerite ait particulièrement apprécié la pizza garnie de tomates, de mozzarella et de basilic (rouge-blanc-vert, les couleurs du drapeau italien).
                 </p>  
-            <img src="ancetre.jpg" alt="Grand papy">
-            <img src="reine.jpg" alt="reine margherite">
-            <img src="papy_1962.jpg" alt="papy">
+
+
+                <div class="slider-container">
+                    <div class="menu">
+                      <label for="slide-dot-1"></label>
+                      <label for="slide-dot-2"></label>
+                      <label for="slide-dot-3"></label>
+                    </div>
+                    
+                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="ancetre.jpg">
+              
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="reine.jpg">
+                    
+                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="papy_1962.jpg">
+              
+                  </div>
         </section>
 
         <section class="presentation">
@@ -56,8 +75,23 @@
                     Nos pizzas sont à emporter ou à deguster sur places sur nos deux terrasses équipées chacune d'un four exterrieur, et de son maitre pizzaiolo qui fera le spectacle. <br/>
                     Notre équipe saura à coup sûr emoustiller vos papilles et vous faire passer une merveilleuse soirée dans un cadre idilique. 
                 </p>
-                <img src="terrase1.jpg" alt="terrase exterrieur1">
-                <img src="terrasse2.jpg" alt="terrasse exterrieur2">
+                <div class="slider-container">
+                    <div class="menu">
+                      <label for="slide-dot-4"></label>
+                      <label for="slide-dot-5"></label>
+                      <label for="slide-dot-6"></label>
+                    </div>
+                    
+                    <input class="slide-input" id="slide-dot-4" type="radio" name="slides" checked>
+                    <img class="slide-img" src="terrase1.jpg">
+              
+                    <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
+                    <img class="slide-img" src="terrasse2.jpg">
+                    
+                    <input class="slide-input" id="slide-dot-6" type="radio" name="slides">
+                    <img class="slide-img" src="terrasse3.jpg">
+              
+                  </div>
         </section>
 
         <section class="pizza">
@@ -123,95 +157,28 @@
 
         <section class="contact">
             <h2 id="ancre4">Contactez nous</h2>
+
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.2655997936104!2d-1.549740084596134!3d47.21138517916038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ef2139832f6b%3A0xe5aaf780b1ea1c91!2sWild%20Code%20School%20-%20Formation%20D%C3%A9veloppeur%20Web%20et%20Data%20Analyst!5e0!3m2!1sfr!2sfr!4v1666103790131!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <h1 id="title">Nous souhaitons nous améliorer</h1>
-	</header>
-	<body>
-	<div id="form-outer">
-		<p id="description">Dis moi comment je peux m'améliorer.</p>
-		<form id="survey-form">
-			<div class="rowTab"> 
-				<div class="labels"><!-- demande de nom -->
-					<label id="name-label" for="name">* Ton nom :</label>
-				</div>
-				<div class="rightTab">
-					<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Nom et prénom" required>
-				</div>
-			</div>
-			<div class="rowTab">
-				<div class="labels"><!-- demande de Mail-->
-					<label id="email-label" for="email">* Ton Email :</label>
-				</div>
-				<div class="rightTab">
-					<input type="email" name="email" id="email" class="input-field" required placeholder="Ton Email">
-				</div>
-			
-			<div class="rowTab">
-				<div class="labels"><!-- choix multiple sur le job-->
-					<label for="currentPos">Qu'est-ce qui te correspond le mieux à l'instant présent :</label>
-				</div>
-			
-			</div>
-
-			<div class="rowTab">
-				<div class="labels"><!--choix multiple sur la recommendation-->
-					<label for="userRating">Est-ce que tu me recommandes?</label>
-				</div>
-				<div class="rightTab">
-					<ul style="list-style: none;">
-						<li class="radio">
-							<label>Oui<input name="radio-buttons" value="1" type="radio" class="userRatings"></label>
-						</li>
-						<li class="radio">
-							<label>Peut-être <input name="radio-buttons" value="2" type="radio" class="userRatings"></label>
-						</li>
-						<li class="radio">
-							<label>Non<input name="radio-buttons" value="3" type="radio" class="userRatings"></label>
-						</li>
-					</ul>
-				</div>
-			</div>
-		    <div class="rowTab">
-		      	<div class="labels"><!--choix morale-->
-		        	<label for="most-like">pourquoi as tu choisis mes services ? </label>
-		      	</div>
-		      	<div class="rightTab">
-		        	<select id="most-like" name="mostLike" class="dropdown">
-		      			<option disabled selected value>Choisis une réponse</option>
-		      			<option value="challenges">Pour ce que je propose</option>
-		      			<option value="community">Par recommendation</option>
-		    		</select>
-		      	</div>
-		    </div>
-		    <div class="rowTab">
-		    	<div class="labels">
-		    		<label for="preferences">Qu'est-ce que je dois ameliorer :<br>(choix illimité): </label>
-		    	</div>
-		    	<div class="rightTab">
-		    		<ul id="preferences">
-		    			<li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Les produits de qualité supérieur</label>
-		    			</li>
-		    			<li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">La garniture rapport quantité/prix</label>
-		    			</li>		    			
-		    			<li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">L'ambiance du restaurant</label>
-		    			</li>		    			
-		    			<li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Le personnel</label>
-		    			</li>		    			
-		    		</ul>
-		    	</div>
-		    </div>
-			<div class="rowTab">
-				<div class="labels">
-					<label for="comments">Un commentaire à ajouter?</label>
-				</div>
-				<div class="rigtTab">
-					<textarea id="comments" class="input-field" resize:vertical; placeholder="Chaque commentaire nous fait avancer, alors n'hésites pas..."></textarea>
-				</div>
-			</div>
-			<button id="submit" type="submit">Envoi !</button>
-		</form>
-	</div>
+            <div class="container">
+                <h2>Formulaire de contact</h2>
+                <form action="/action_page.php">
+                  <label for="fname">Nom & prénom</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+              
+                  <label for="sujet">Sujet</label>
+                  <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+              
+                  <label for="emailAddress">Email</label>
+                  <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+              
+              
+                  <label for="subject">Message</label>
+                  <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+              
+                  <input type="submit" value="Envoyer">
+                </form>
+              </div>
         </section>
     </main>
 
