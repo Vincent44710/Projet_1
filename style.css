@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    box-sizing: border-box;
 }
 header{
   position: fixed;
@@ -9,9 +10,10 @@ header{
   width: 100%;
   padding:15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1rem;
   align-items: center;
+  z-index: 1000;
 }
 
 nav {
@@ -81,6 +83,19 @@ p{
   section {
     padding: 1rem;
   }
+
+  .price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .price-container .dot{
+    border-bottom: 1px dashed #000;
+    flex-grow: 1;
+    margin-right: 0.3rem;
+  }
+
 
   /* carousel */
 
@@ -251,6 +266,11 @@ transition: background-color 0.5s ease-in-out;
   background-image:url(photo/napple.jpg);
 }
 
+.contact iframe{
+  width: 100%;
+
+}
+
 
 
 
@@ -259,17 +279,6 @@ transition: background-color 0.5s ease-in-out;
 /* DESKTOP */
 
 @media only screen and (min-width: 480px) {
-  
-  .wallpaper {
-    background-image:none;
-    background-size: cover;
-    height: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 .burger{
   display: none;
