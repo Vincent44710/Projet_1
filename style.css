@@ -38,6 +38,15 @@ li{
   
 }
 
+a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Acme', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Patrick Hand', cursive;
+  font-family: 'Playball', cursive;
+}
+
 nav ul li {
   padding: 10px;
 }
@@ -45,7 +54,7 @@ nav ul li {
 .wallpaper {
     background-image:url(photo/presentation.jpg);
     background-size: cover;
-    height: 15rem;
+    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,8 +163,7 @@ p{
 button{
     padding: 0.85em 2.6em;
     margin: 15px;
-    flex-wrap: wrap;
-
+    justify-content: space-between;
 }
 /* contact */
 input[type=text], textarea, input[type=email] {
@@ -271,14 +279,14 @@ transition: background-color 0.5s ease-in-out;
 
 }
 
+.pizza img{
+margin-top:15px;
 
-
-
-
+}
 
 /* DESKTOP */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 720px) {
 
 .burger{
   display: none;
@@ -293,7 +301,7 @@ ul{
   display: flex;
   justify-content: space-around;
   font-family: 'Great Vibes', cursive;
-  font-size: 1rem; 
+  font-size: 2rem; 
 }
 
 nav {
