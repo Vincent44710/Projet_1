@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" type="text/css" href="style.css"/>
+    <link rel="icon" href="photo/pizza.ico" />
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Acme&family=Inter:wght@500&family=Patrick+Hand&family=Playball&display=swap');
         </style>
@@ -17,87 +18,89 @@
     <title>Pizzeria-projet-1</title>
 </head>
 <body>
-    <header>
-        <img id="logo" src="photo/Au-fil-du-temps.svg" alt="logo resto">
-        <nav>
-            <ul class="navbar-link">
-                <li><a href="#ancre1">Acceuil</a></li>
-                <li><a href="#ancre2">Présentation</a></li>
-                <li><a href="#ancre3">Nos pizzas</a></li>
-                <li><a href="#ancre4">Contactez Nous</a></li>
-            </ul>
-        </nav>
+<header>
+    <img id="logo" src="photo/Au-fil-du-temps.svg" alt="logo resto">
+    <nav>
+        <ul class="navbar-link">
+            <li><a href="#ancre1">Accueil</a></li>
+            <li><a href="#ancre2">Présentation</a></li>
+            <li><a href="#ancre3">Nos pizzas</a></li>
+            <li><a href="#ancre4">Contact</a></li>
+        </ul>
+    </nav>
+    <div>
         <div class="burger">
             <span></span>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <section class="wallpaper">
-            <div class="taught">
-                  <div class="content">
-                <h1>Pizzeria "Au fil du temps"</h1>
+<main>
+    <section class="wallpaper">
+        <div class="taught">
+            <div class="content">
+                <h1>Pizzeria</h1>
+                <h1>"Au fil du temps"</h1>
                 <h1>06-19-84-58-34</h1>
             </div>
-        </section>
-        <section class="acceuil">
-            <h2 id="ancre1">Acceuil</h2>
-                <p>La pizza est née au XVIème siècle dans la ville de Naples en Italie. A cette époque on essayait d'améliorer le goût – un peu fade – des crêpes de pain, avec l'aide de gros sel et de gras de porc.
+        </div>
+    </section>
+
+    <section class="accueil">
+        <h2 id="ancre1">Accueil</h2>
+            <p>La pizza est née au XVIème siècle dans la ville de Naples en Italie. A cette époque on essayait d'améliorer le goût – un peu fade – des crêpes de pain, avec l'aide de gros sel et de gras de porc.
                     Vraisemblablement c'était à l'origine le repas du pauvre: on garnissait de la pâte à pain, avant ou après sa cuisson, avec ce qu'on avait sous la main.
                     La pizza actuelle, telle que nous l'aimons, est née à Naples. La légende veut que la reine Marguerite ait particulièrement apprécié la pizza garnie de tomates, de mozzarella et de basilic (rouge-blanc-vert, les couleurs du drapeau italien).
-                </p>  
+            </p> 
+            <div class="accueil-photo">
+                <div class="wraper-img">
+                    <img id="ancetre" src="photo/ancetre400x400.jpg" alt="ancetre">
+                </div>
+                <div class="wraper-img">
+                    <img id="chevalier" src="photo/chevalier400x400.jpg" alt="chevalier">
+                </div>
+                <div class="wraper-img">
+                    <img id="reine" src="photo/Marguerite400x400.jpg" alt="Marguerite">
+                </div>
+            </div> 
 
+    </section>   
 
-                <div class="slider-container">
-                    <div class="menu">
-                      <label for="slide-dot-1"></label>
-                      <label for="slide-dot-2"></label>
-                      <label for="slide-dot-3"></label>
-                    </div>
-                    
-                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-                    <img class="slide-img" src="photo/ancetre.jpg">
-              
-                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-                    <img class="slide-img" src="photo/reine.jpg">
-                    
-                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-                    <img class="slide-img" src="photo/papy_1962.jpg">
-              
-                  </div>
-        </section>
-
-        <section class="presentation">
-            <h2 id="ancre2">Présentation</h2>
-                <p>Notre famille, native de Naple se partage cette recette ancestrale de génération en génération depuis 2 millenaires. 
+    <section class="presentation">
+        <h2 id="ancre2">Présentation</h2>
+            <p>Notre famille, native de Naple se partage cette recette ancestrale de génération en génération depuis 2 millenaires. 
                     Envis de partager une degustation unique, la Pizzeria "au fils du temps" vous fera traversez les époques avec se même goût ancestrale qui à ravie notre reine Marguerite. <br/>
-                    <br/>
+                <br/>
                     Nos pizzas sont à emporter ou à deguster sur places sur nos deux terrasses équipées chacune d'un four exterrieur, et de son maitre pizzaiolo qui fera le spectacle. <br/>
                     Notre équipe saura à coup sûr emoustiller vos papilles et vous faire passer une merveilleuse soirée dans un cadre idilique. 
                 </p>
-                <div class="slider-container">
-                    <div class="menu">
-                      <label for="slide-dot-4"></label>
-                      <label for="slide-dot-5"></label>
-                      <label for="slide-dot-6"></label>
-                    </div>
+            <div class="slider-container">
+                <div class="menu">
+                    <label for="slide-dot-1"></label>
+                    <label for="slide-dot-2"></label>
+                    <label for="slide-dot-3"></label>
+                </div>
                     
-                    <input class="slide-input" id="slide-dot-4" type="radio" name="slides" checked>
-                    <img class="slide-img" src="photo/terrase1.jpg">
+                <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="photo/terrase1.jpg" alt="terrasse1">
               
-                    <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
-                    <img class="slide-img" src="photo/terrasse2.jpg">
+                <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="photo/terrasse2.jpg" alt="terrasse2">
                     
-                    <input class="slide-input" id="slide-dot-6" type="radio" name="slides">
-                    <img class="slide-img" src="photo/terrasse3.jpg">
+                <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="photo/terrasse3.jpg" alt="terrasse3">
               
-                  </div>
-        </section>
+            </div>
+    </section>
 
-        <section class="pizza">
-            <h2 id="ancre3">Nos pizzas</h2>
-            <Button id="togg1">Pizza base crème</Button>
-                    
+    <section class="pizza">
+        <h2 id="ancre3">Nos pizzas</h2>
+            <div class="container-pizza">
+                <button id="togg2" class="active">Pizza base tomate</button>
+                <Button id="togg1">Pizza base crème</Button>
+            </div>
+            
+
             <div id="d1">
                 <a href="photo/milanaise-grande.jpg"><img src="photo/milanaise-80x80.jpg" alt="pizza milanaise" title="cliquez pour agrandir"/></a>
                 <h3>Milanaise</h3>
@@ -140,7 +143,7 @@
                     </div>
 
             </div>
-            <button id="togg2">Pizza base tomate</button>
+            
 
             <div id="d2">
                 <a href="photo/kilina-grande.jpg"><img src="photo/kilina-80x80.jpg" alt="pizza kilina" title="cliquez pour agrandir"/></a>
@@ -186,12 +189,12 @@
         </section>
 
         <section class="contact">
-            <h2 id="ancre4">Contactez nous</h2>
+            <h2 id="ancre4">Contact</h2>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.2655997936104!2d-1.549740084596134!3d47.21138517916038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ef2139832f6b%3A0xe5aaf780b1ea1c91!2sWild%20Code%20School%20-%20Formation%20D%C3%A9veloppeur%20Web%20et%20Data%20Analyst!5e0!3m2!1sfr!2sfr!4v1666103790131!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.2655997936104!2d-1.549740084596134!3d47.21138517916038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ef2139832f6b%3A0xe5aaf780b1ea1c91!2sWild%20Code%20School%20-%20Formation%20D%C3%A9veloppeur%20Web%20et%20Data%20Analyst!5e0!3m2!1sfr!2sfr!4v1666103790131!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="container">
 
-            <div class="container">
                 <h2>Formulaire de contact</h2>
+
                 <form action="/action_page.php">
                   <label for="fname">Nom & prénom</label>
                   <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
@@ -209,19 +212,32 @@
                   <input type="submit" value="Envoyer">
                 </form>
               </div>
+            
         </section>
-    </main>
+       
+</main>
 
-    <footer>
-        <h1>horraire et jour d'ouverture</h1>
+<footer>
         
-        
-        
+    <table>
+        <caption><strong>Ouvertures</strong></caption>
+            <tr> <th>Jours</th> <th>Horraire</th></tr>
+            <tr> <td>lundi -mardi</td> <td>fermé</td></tr>
+            <tr> <td>mercredi-jeudi</td> <td>11h30-15h00 17h30-22h00</td></tr>
+            <tr> <td>vendredi-samedi-dimanche</td> <td>11h00-23h00</td></tr>
+    </table>
 
+    <div class="image-chef">
+        <img src="photo/chef.jpg" alt="chef">
 
+    </div>
 
-
-    </footer>
+    <div class="divers-links">
+        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+        <div class="adress"></div><p><strong>Adresse:</strong> 4 rue baron, 44000 Nantes</p>
+        <a href="06-19-84-58-34"><strong>Téléphone:</strong> 06-19-84-58-34</a>  
+    </div>  
+</footer>
 
     <script src="script.js"></script>
 </body>

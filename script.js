@@ -8,25 +8,23 @@ burger.addEventListener('click',() =>{
 });
 
 
-// Button
+// SELECTOR CONTAINER PIZZA TYPE
 
-let btn1 = document.getElementById("togg1");
-let btn2 = document.getElementById("togg2");
 let d1 = document.getElementById("d1");
 let d2 = document.getElementById("d2");
-togg1.addEventListener("click", () => {
-  if(getComputedStyle(d1).display != "none"){
-    d1.style.display = "none";
-  } else {
+
+// const togg1 = document.getElementById("togg1");
+
+togg1.addEventListener("click", (event) => {
+    togg2.classList.remove("active");
+    event.target.classList.add("active");
     d1.style.display = "block";
-  }
+    d2.style.display = "none";
 })
 
-function togg(){
-  if(getComputedStyle(d2).display != "none"){
-    d2.style.display = "none";
-  } else {
-    d2.style.display = "block";
-  }
-};
-togg2.onclick = togg;
+togg2.addEventListener("click", (event) => {
+  togg1.classList.remove("active");
+  event.target.classList.add("active");
+  d1.style.display = "none";
+  d2.style.display = "block";
+})

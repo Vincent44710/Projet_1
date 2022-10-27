@@ -4,9 +4,14 @@
     list-style-type: none;
     box-sizing: border-box;
 }
+
+
+
+
+/* TOP PAGE */
 header{
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color:rgba(255, 255, 255, 0.80);
   width: 100%;
   padding:15px;
   display: flex;
@@ -16,21 +21,25 @@ header{
   z-index: 1000;
 }
 
+
+
+
+/* NAVIGATION */
 nav {
   position: fixed;
   right: 0;
   top: 130px;
   width: 0;
-  background-color: rgba(41, 39, 39, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #CCC;
   transition: 0.5s linear;
+  border-radius: 1em;
 }
 
 nav.show {
   padding: 30px;
   width: auto;
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
+ 
 }
 
 li{
@@ -40,7 +49,7 @@ li{
 
 a{
   text-decoration: none;
-  color: white;
+  color:rgba(0, 0, 0, 0.5);
   font-family: 'Acme', sans-serif;
   font-family: 'Inter', sans-serif;
   font-family: 'Patrick Hand', cursive;
@@ -51,29 +60,42 @@ nav ul li {
   padding: 10px;
 }
 
+
+
+
+
+/* FIRST PAGE*/
+
 .wallpaper {
-    background-image:url(photo/presentation.jpg);
-    background-size: cover;
-    height: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image:url(photo/presentation.jpg);
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .taught{
-    color: white;
-    font-size: 8px;
-    padding: 1rem;
-    font-family: 'Great Vibes', cursive; 
+  color: white;
+  font-size: 8px;
+  padding: 1rem;
+  font-family: 'Great Vibes', cursive; 
 }
+
 .content{
   margin-top: 120px;
 }
+
+
+
+
+/* PERSONNALISATION */
 
 h1{
   align-items: center;
   font-size: 5em;
 }
+
 h2{
   text-align: center;
   margin-bottom: 15px;
@@ -81,6 +103,7 @@ h2{
   font-family: 'Patrick Hand', cursive;
   font-family: 'Playball', cursive;
 }
+
 p{
   margin-bottom: 20px;
   color: black;
@@ -89,83 +112,150 @@ p{
   font-family: 'Patrick Hand', cursive;
   font-family: 'Playball', cursive;
 }
-  section {
-    padding: 1rem;
-  }
 
-  .price-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .price-container .dot{
-    border-bottom: 1px dashed #000;
-    flex-grow: 1;
-    margin-right: 0.3rem;
-  }
-
-
-  /* carousel */
-
-  img {
-    max-width: 100%;
-  }
-  .slider-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;
-    height: 350px;
-    overflow: hidden;
-  }
-  .menu {
-    position: absolute;
-    left: 0;
-    z-index: 11;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-  }
-  .menu label {
-    cursor: pointer;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #ccc;
-    border-radius: 50px;
-    margin: 0 0.2em 1em;
-  }
-  .menu label:hover,.menu label:focus {
-    background: #1c87c9;
-  }
-  .slide-input{
-    opacity: 0;
-  }
-  .slide-img {
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    z-index: 10;
-    transition: left 0s 0.75s;
-  }
-  [id^="slide"]:checked + .slide-img {
-    left: 0;
-    z-index: 100;
-    transition: left 0.65s ease-out;
-  }
-
-
-
-
-  /* Button pizza selection */
-button{
-    padding: 0.85em 2.6em;
-    margin: 15px;
-    justify-content: space-between;
+section {
+  padding: 1rem;
 }
-/* contact */
+
+.accueil-photo{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wraper-img {
+  width: 100%;
+}
+
+.wraper-img img {
+  width: 100%;
+  height: auto;
+}
+
+#ancetre{
+  border: solid 5px white;
+  margin-top: 10px;
+}
+
+#chevalier{
+  border: solid 5px white;
+  margin-top: 10px;
+}
+
+#reine{
+  border: solid 5px white;
+  margin-top: 10px;
+}
+
+
+
+  /* CONTAINEUR PRICE */
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-container .dot{
+  border-bottom: 1px dashed #000;
+  flex-grow: 1;
+  margin-right: 0.3rem;
+}
+
+
+
+
+  /* CAROUSEL */
+
+img {
+  max-width: 100%;
+}
+
+.slider-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  height: 350px;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+
+.menu label:hover,.menu label:focus {
+  background: #1c87c9;
+}
+
+.slide-input{
+  opacity: 0;
+}
+
+.slide-img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0s 0.75s;
+}
+
+[id^="slide"]:checked + .slide-img {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+#d1 {
+  display: none;
+}
+
+#d1, #d2  {
+  padding: 20px;
+}
+
+
+
+
+  /* PIZZA SELECTION */
+.container-pizza {
+  display: flex;
+}
+button{
+  padding: 1rem;
+  width: 50%;
+  font-family: 'Acme', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Patrick Hand', cursive;
+  font-family: 'Playball', cursive;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: grey;
+}
+
+
+
+
+/* CONTACT */
+
 input[type=text], textarea, input[type=email] {
   width: 100%;
   padding: 12px;
@@ -178,12 +268,14 @@ input[type=text], textarea, input[type=email] {
   margin-left: 0px;
   resize: vertical;
 }
-label{margin-right: 0px;
+
+label {
+  margin-right: 0px;
   margin-left: 0px;
-  width: 100%;}
+  width: 100%;
+}
 
 input[type=submit] {
-  background-color: #1255a2;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -196,13 +288,11 @@ input[type=submit]:hover {
 }
 
 .container {
-  /* Ajouter box-sizing */
   box-sizing : border-box;
   border-radius:5px;
   background-color:#f2f2f2;
   padding:20px;
   width: 100%;
-  /* redéfinition 400 + 2*20 */
   max-width: 440px;
   margin:0 auto;
 }
@@ -210,27 +300,28 @@ input[type=submit]:hover {
 
 
 
-/* burger menu */
 
-.burger{
-width: 42px;
-height: 24px;
-cursor: pointer;
-position: relative;
+/* BURGER MENU*/
+
+.burger {
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
 }
 
-.burger span{
-width: 100%;
-height: 4px;
-background-color: black;
-display: block;
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-transition: background-color 0.5s ease-in-out;
+.burger span {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
 }
 
-.burger span::before, .burger span::after{
+.burger span::before, .burger span::after {
   content:"";
   position: absolute;
   width: 100%;
@@ -239,61 +330,155 @@ transition: background-color 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
 }
 
-.burger span::before{
+.burger span::before {
   transform: translateY(-10px);
 
 }
-.burger span::after{
+.burger span::after {
   transform: translateY(10px);
 
 }
 
-.burger.active span{
+.burger.active span {
   background-color: transparent;
   /* quand nous rendons la span active, celle ci devient transparente. */
 
 }
-.burger.active span::before{
+.burger.active span::before {
   transform: translateY(0px) rotateZ(45deg);
 }
-.burger.active span::after{
+.burger.active span::after {
   transform: translateY(0px) rotateZ(-45deg);
 }
 
-/* logo */
+
+
+/* LOGO*/
 #logo{
   height: auto;
   width: 100px;
 }
 
+
+
+
+/* SECTION COLORS */
+
+.accueil{
+  background-color:#F0ECB2; 
+}
+
+.presentation{
+  background-color:#F0ECB2;
+}
+
 .pizza{
   background-color: #F0ECB2;
 }
+.pizza img{
+  margin-top:15px;
+}
 
 .contact{
-  background-image:url(photo/napple.jpg);
+  background-color: #F0ECB2;
 }
+
+.image-chef{
+  margin-top: 10px;
+  border: 2px solid white;
+
+}
+
+
+
+
+
+/* GOOGLE MAP */
 
 .contact iframe{
   width: 100%;
+}
+
+
+
+/* CONTACT TABLE */
+
+table, caption, th, td {
+  margin-top: 10px;
+  border: 1px black;
+  border-radius : 10px 10px / 10px 10px;
+}
+
+caption, th, td {
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Patrick Hand', cursive;
+  font-family: 'Playball', cursive;
+  background-color: white;
+}
+  
+footer{
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.divers-links{
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+/* TABLETTE */
+
+@media screen and (min-width: 540px) {
+  .wraper-img {
+    width: 50%;
+  }
+  .taught{
+    color: white;
+    font-size: 15px;
+    padding: 1rem;
+    font-family: 'Great Vibes', cursive;
+  }
 
 }
 
-.pizza img{
-margin-top:15px;
 
-}
+
 
 /* DESKTOP */
 
-@media only screen and (min-width: 720px) {
+@media screen and (min-width: 910px) {
+  .burger {
+    display: none;
+  }
+  .taught{
+    color: white;
+    font-size: 10px;
+    padding: 1rem;
+    font-family: 'Great Vibes', cursive;
+  }
 
-.burger{
-  display: none;
+/* BURGER MENU */
+
+
+
+
+
+
+/* STYLE */
+
+h1{
+  align-items: center;
+  font-size: 12em;
 }
-
-
-
 
 ul{
   text-decoration: none;
@@ -303,6 +488,14 @@ ul{
   font-family: 'Great Vibes', cursive;
   font-size: 2rem; 
 }
+
+.wraper-img {
+  width: 33%;
+}
+
+
+
+/* NAV BAR */
 
 nav {
   position: initial;
@@ -331,6 +524,4 @@ a:link{
   text-decoration: none;
   color: white;
 } 
-
-
 }
